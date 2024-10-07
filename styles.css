@@ -80,7 +80,7 @@ nav ul li a:hover {
 }
 
 .text-content p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 30px;
   color: #555;
 }
@@ -92,7 +92,7 @@ nav ul li a:hover {
 
 .btn {
   padding: 15px 30px;
-  font-size: 1em;
+  font-size: 1.5em;
   border-radius: 5px;
   text-decoration: none;
 }
@@ -149,7 +149,7 @@ nav ul li a:hover {
 .about-section p, .news-section p, .ebook-section p {
   width: 80%;
   margin: 0 auto;
-  font-size: 1.1em;
+  font-size: 1.5em;
   color: #555;
   line-height: 1.8;
 }
@@ -164,7 +164,7 @@ nav ul li a:hover {
 }
 
 .news-section article p {
-  font-size: 1.1em;
+  font-size: 1.5em;
   color: #666;
 }
 
