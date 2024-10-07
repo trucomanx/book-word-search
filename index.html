@@ -41,7 +41,7 @@
         </div>
       </div>
       <div class="image-content">
-        <img src="book-placeholder.svg" alt="Book Cover" class="book-image">
+        <img src="images/cover.jpg" alt="Book Cover" class="book-image">
       </div>
     </div>
   </main>
@@ -75,13 +75,48 @@
   <div class="container">
     <h2>Screenshots</h2>
     <div class="screenshots-gallery">
-      <img src="screenshot1.svg" alt="Screenshot 1">
-      <img src="screenshot2.svg" alt="Screenshot 2">
-      <img src="screenshot3.svg" alt="Screenshot 3">
-      <img src="screenshot4.svg" alt="Screenshot 4">
+      <img src="images/screenshot1.png" alt="Screenshot 1" class="zoomable">
+      <img src="images/screenshot2.png" alt="Screenshot 2" class="zoomable">
+      <img src="images/screenshot3.png" alt="Screenshot 3" class="zoomable">
     </div>
   </div>
 </section>
+
+
+<!-- Modal for Zoom -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
+
+<!-- Adicione o JavaScript aqui, antes de </body> -->
+<script>
+  // Seleciona o modal
+  var modal = document.getElementById("imageModal");
+
+  // Seleciona a imagem do modal
+  var modalImg = document.getElementById("modalImage");
+
+  // Seleciona todas as imagens que podem ser clicadas
+  var images = document.querySelectorAll(".zoomable");
+
+  // Função para abrir o modal ao clicar em uma imagem
+  images.forEach(function(image) {
+    image.addEventListener("click", function() {
+      modal.style.display = "block";
+      modalImg.src = this.src;
+    });
+  });
+
+  // Fecha o modal quando clicar no botão de fechar
+  var span = document.getElementsByClassName("close")[0];
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+</script>
+
+
 
   <!-- News Section -->
   <section class="news-section" id="news">
